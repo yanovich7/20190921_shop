@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header,
+nav,
+footer,
+section {
+    display: block;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.wrapper {
+    margin: 60px auto 80px;
+    background-color: white;
+    width: 1244px;
+    padding: 33px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.color-highlight {
+    color: orange;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__logo {
+    width: 42px;
+    height: 42px;
+    background: url(../images/icons/logo.jpg) center center / contain no-repeat;
+    margin-right: 56px;
+}
+
+
+.menu__item {
+    color: black;
+    margin-right: 32px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    text-indent: 20px;
+    position: relative;
+}
+
+.user::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    top: -2px;
+    margin-right: 10px;
+    background: url(../images/icons/account.png) center no-repeat;
+}
+
+.basket {
+    text-indent: 26px;
+    position: relative;
+}
+
+.basket::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 18px;
+    top: -2px;
+    margin-right: 9px;
+    background: url(../images/icons/basket.png) center no-repeat;
+}
+/*начало */
+
+.main-title{
+    margin-top: 175px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big-text{
+    font-weight: 100;
+    font-size: 72px;
+    margin-bottom: 15px;
+    text-transform: uppercase;     
+}
+
+.big-text__subline{
+    display: inline-block;
+    margin-bottom: 75px; 
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:#606060;
+}
+
+.main-title-button{
+    display:block;
+    width:230px;
+    height: 60px;
+    font-size: 14px;
+    color: #606060;
+    text-transform: uppercase;
+    border: 1px solid #606060;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid{
+    margin:0 auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-auto-rows: minmax(295px, auto);
+  
+  }
+  
+.grid__item{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.big-cell-image-one{
+    background: url(../images/1.jpg) center center / cover;
+}
+
+.small-image-one{
+    background: url(../images/3.jpg) center center / cover;
+}
+
+.small-image-two{
+    background: url(../images/photo-6121.jpg) center center / cover;
+}
+
+.small-image-three{
+    background: url(../images/4.jpg) center center / cover;
+}
+
+.small-image-four{
+    background: url(../images/5.jpg) center center / cover;
+}
+
+.small-image-five{
+    background: url(../images/8.jpg) center center / cover;
+}
+
+.light-grey-cell{
+    background: #bbbbbb; 
+}
+
+.dark-grey-cell{
+    background: #606060; 
+}
+
+.grid div:nth-child(1){
+    grid-row-start: span 2;
+}
+
+.grid div:nth-child(7){
+    grid-row-start: span 2;
+}
+
+
+.grid__main-text{
+    width: 171px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: white;
+    margin-top: 20px;
+} 
+
+.mark-wrapper{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid__mark{
+    position: relative;
+    width: 33px;
+    height:33px;
+    display: block;
+    background: url(../images/icons/exclamation-mark.png) center center/ cover !important;
+}
+
+.grid__arrow{
+    position: relative;
+    width: 33px;
+    height:33px;
+    display: block;
+    background: url(../images/icons/arrow-left.png) center center/ cover !important;  
+    margin-bottom: 20px;
+}
+
+.grid__mark-line{
+    width: 25px;
+    height:1px;
+    background: white;
+    margin: 0 8px;
+}
+
+.grid__main-big-text{
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.grid__main-big-text-italic{
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    text-transform: uppercase;
+}
+
+.grid__main-price-text{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: 100;
+}
+/*  */
+.shopping-title{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shopping-title__headline{
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight:100;   
+}
+
+.shopping-title__subline{
+    margin-bottom: 100px; 
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:#606060;
+}
+
+.assignet__wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assignet{
+    position: relative;
+    width: 475px;
+    padding: 15px 5px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.assignet-button{
+    text-align: center;
+    width: 195px;
+    display: inline-block;
+    padding: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #f68236;
+    color: white; 
+}
+
+.warning_sign{
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    color: red;
+    margin: 10px auto 270px;
+    font-size:14px;
+}
+
+/* футер */
+.footer{
+    width: 1179px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 365px;
+}
+
+
+
+.footer__divider{
+    height: 128px;
+    border-right: 1px solid #eaeaea;
+}
+
+.footer__title{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__link{
+    display:block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.footer__social-link{
+    display:inline-block;
+    padding: 16px;
+    margin-right: 10px;
+}
+
+.twitter{
+    background: url(../images/social/twitter.png) no-repeat center center / contain;
+}
+
+.facebook{
+    background: url(../images/social/facebook.png) no-repeat center center / contain;
+}
+
+.instagram{
+    background: url(../images/social/insta.png) no-repeat center center / contain;
+}
+
+.margin-top-zero{
+    margin-top: 0;
+}

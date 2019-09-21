@@ -1,0 +1,37 @@
+.auth-menu {
+    position: absolute;
+    width: 160px;
+    padding: 15px;
+    top: 25px;
+    left: -20px;
+    background-color: #fff;
+    border: 1px solid #AAA;
+}
+
+.auth-menu__input {
+    text-indent: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #AAA;
+}
+
+.auth-menu__button {
+    width: 100%;
+    background-color: #AAA;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.user__logout,
+.user-login {
+    cursor: pointer;
+}

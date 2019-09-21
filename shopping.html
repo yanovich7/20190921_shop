@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/shopping.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-nav">
+                <a href="" class="header-nav__logo"></a>
+                <nav class="menu">
+                    <a href="" class="menu__item">Женщинам</a>
+                    <a href="" class="menu__item">Мужчинам</a>
+                    <a href="" class="menu__item">Детям</a>
+                    <a href="" class="menu__item">Новинки</a>
+                    <a href="" class="menu__item">О нас</a>
+                </nav>
+            </div>
+
+            <div class="user-area">
+                <div class="user mr-20">
+                    <div class="user__text">Привет, Алексей (<a href="" class="user__logout color-highlight">выйти</a>)</div>
+                </div>
+                <div class="basket">
+                    <div class="basket__text">Корзина(5)</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="shopping-title">
+            <h1 class="shopping-title__headline">ВАША КОРЗИНА</h1>
+            <p class="shopping-title__subline">Товары резервируются на ограниченное время</p>
+        </div>
+
+        <div class="shopping-list">
+            <div class="shopping-thead">
+                <div class="shopping-thead__left-block">
+                    <p class="shopping-thead__text">Фото</p>  
+                    <p class="shopping-thead__text">Наименовани</p>  
+                </div>
+                <div class="shopping-thead__right-block">
+                    <p class="shopping-thead__text">Размер</p>  
+                    <p class="shopping-thead__text">Количество</p>
+                    <p class="shopping-thead__text">Стоимость</p>
+                    <p class="shopping-thead__text">Удалить</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-cell">
+            <div class="order-cell__left-block">
+                <div class="order-cell__image">
+                    <img class="order-cell__image-icon" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="order-cell__text">
+                    <p class="order-cell__headline">Курстка синяя</p>
+                    <p class="order-cell__subtitle">арт. 123412</p>
+                </div>
+            </div>
+            <div class="order-cell__right-block">
+                <p class="order-cell__discription-text">38</p>
+                <div class="order-cell__counter">
+                    <p class="order-cell__discription-text">1</p>
+                        <div class="order-cell__plus-calc"> 
+                            <div class="order-cell__plus"></div>
+                            <div class="order-cell__minus"></div>
+                        </div>
+                </div>
+                <p class="order-cell__discription-text">3800 руб.</p>
+                <div class="order-cell__delete-blok"></div>           
+            </div>
+        </div>
+
+        <div class="order-cell">
+            <div class="order-cell__left-block">
+                <div class="order-cell__image">
+                    <img class="order-cell__image-icon" src="images/catalog/7.jpg" alt="">
+                </div>
+                <div class="order-cell__text">
+                    <p class="order-cell__headline">Кеды серые</p>
+                    <p class="order-cell__subtitle">арт. 234929</p>
+                </div>
+            </div>
+            <div class="order-cell__right-block">
+                <p class="order-cell__discription-text">M</p>
+                <div class="order-cell__counter">
+                    <p class="order-cell__discription-text">1</p>
+                    <div class="order-cell__plus-calc"> 
+                        <div class="order-cell__plus"></div>
+                        <div class="order-cell__minus"></div>
+                    </div>
+                </div>
+                <p class="order-cell__discription-text">5200 руб.</p>
+                <div class="order-cell__delete-blok"></div>           
+            </div>
+        </div>
+
+        <div class="order-cell">
+            <div class="order-cell__left-block">
+                <div class="order-cell__image">
+                    <img class="order-cell__image-icon" src="images/catalog/12.jpg" alt="">
+                </div>
+                <div class="order-cell__text">
+                    <p class="order-cell__headline">Джинсы голубые</p>
+                    <p class="order-cell__subtitle">арт. 342355</p>
+                </div>
+            </div>
+            <div class="order-cell__right-block">
+                <p class="order-cell__discription-text">S</p>
+                <div class="order-cell__counter">
+                    <p class="order-cell__discription-text">2</p>
+                    <div class="order-cell__plus-calc"> 
+                        <div class="order-cell__plus"></div>
+                        <div class="order-cell__minus"></div>
+                    </div>
+                </div>
+                <p class="order-cell__discription-text">3500 руб.</p>
+                <div class="order-cell__delete-blok"></div>                      
+            </div>
+        </div>
+
+        <div class="summary-cost">
+            <div class="summary-cost__block">
+                <p class="summary-cost__text">Итого:</p>
+                <p class="summary-cost__text color-highlight"><b>12500 руб.</b></p>
+            </div>
+        </div>
+
+        <div class="tooth-divider">
+            <div class="tooth-divider__item"></div>
+            <div class="tooth-divider__item"></div>
+            <div class="tooth-divider__item"></div>
+        </div>
+
+        <div class="shopping-title">
+            <h1 class="shopping-title__headline">Адреса доставки</h1>
+            <p class="shopping-title__subline">Все поля обязательны для заполнения</p>
+        </div>
+
+        <section class="write-us">
+                <div class="write-wrapper">
+                    <form class="form" method="GET" action="form.php">
+                        <div class="write-us-form">
+                            <div class="column">
+                                <p class="form-title">Выберите способ достаки</p>
+                                <div class="selector-delivery">
+                                    <span class="shopping-title__subline font-size-14px">Курьерская служба</span>
+                                    <div class="delivery-triangle"></div>
+                                </div>
+                                <div class="separate">
+                                    <p class="form-title">Имя</p>
+                                    <p class="form-title">Фамилия</p>
+                                </div>
+                                <div class="separate">
+                                    <input class="input-text" id="form-name" type="text" name="name">
+                                    <input class="input-text" id="form-surname" type="text" name="surmane">
+                                </div>  
+                                <p class="form-title">Адрес</p>                        
+                                <input class="input-text input-text__wide" id="form-adress" type="text" name="adress">
+                                <div class="separate">
+                                    <p class="form-title">Город</p>
+                                    <p class="form-title">Индекс</p>
+                                </div>
+                                <div class="separate">
+                                    <input class="input-text" type="text" id="form-city" name="city">
+                                    <input class="input-text" type="text" id="form-index" name="index"> 
+                                </div>
+                                <div class="separate">
+                                        <p class="form-title">Телефон</p>
+                                        <p class="form-title">E-mail</p>
+                                    </div>
+                                <div class="separate">
+                                    <input class="input-text" type="email" id="form-mail" name="mail">
+                                    <input class="input-text" type="number" id="form-phone" name="Phone">
+                                </div>
+                            </div>                         
+                        </div>
+                        <div class="tooth-divider border-all-none">
+                            <div class="tooth-divider__item"></div>
+                            <div class="tooth-divider__item"></div>
+                            <div class="tooth-divider__item"></div>
+                        </div> 
+                        <div class="shopping-title">
+                            <h1 class="shopping-title__headline">Варианты оплаты</h1>
+                            <p class="shopping-title__subline">Все поля обязательны для заполнения</p>
+                        </div>
+                        <div class="form-final-calc-text">
+                            <p class="final-calc-text">Стоимость: <span class="final-calc-text-number">12500 руб.</span></p>
+                            <p class="final-calc-text">Доставка: <span class="final-calc-text-number">500 руб.</span></p>
+                            <p class="final-calc-text color-highlight"> Итого: <span class="final-calc-text-number color-highlight">1300 руб.</span></p>
+                        </div>
+                        <p class="form-title">Выберите способ оплаты</p>
+                        <div class="selector-delivery">
+                            <span class="shopping-title__subline font-size-14px">Сбербанк</span>
+                            <div class="delivery-triangle"></div>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="" class="add-button">Заказать</a>
+                        </div>
+                                      
+                    </form>    
+                </div>
+            </section>
+
+        
+        <div class="footer margin-top-zero">
+            <div class="footer__block">
+                <h2 class="footer__title">КОЛЛЕКЦИИ</h2>
+                <a class="footer__link" href="">Женщинам(1725)</a>
+                <a class="footer__link" href="">Мужчинам(635)</a>
+                <a class="footer__link" href="">Детям(2514)</a>
+                <a class="footer__link" href="">Новинки(76)</a>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__block">
+                <h2 class="footer__title">МАГАЗИН</h2>
+                <a class="footer__link" href="">О нас</a>
+                <a class="footer__link" href="">Доставка</a>
+                <a class="footer__link" href="">Работай с нами</a>
+                <a class="footer__link" href="">Контакты</a>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__block">
+                <h2 class="footer__title">МЫ В СОЦ СЕТЯХ</h2>
+                <a class="footer__link" href="">сайт разработан в inordic.ru</a>
+                <a class="footer__link" href="">2018 © Все права защищены</a>
+                <a class="footer__social-link twitter" href=""></a>
+                <a class="footer__social-link facebook" href=""></a>
+                <a class="footer__social-link instagram" href=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
